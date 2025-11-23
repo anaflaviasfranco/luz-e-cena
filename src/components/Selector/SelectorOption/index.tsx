@@ -1,16 +1,15 @@
-import React from 'react';
-
+import React from "react";
 interface SelectorOption extends React.OptionHTMLAttributes<HTMLOptionElement> {
-    label: string;
-    value: string;
+  label: string;
+  value: string;
 }
 
-const SelectorOption = ({label, value, ...rest}: SelectorOption) => {
+const SelectorOption = ({ label, value, ...rest }: SelectorOption) => {
   return (
     <option value={value} {...rest}>
-        {label}
+      {label}
     </option>
-  )
-}
+  );
+};
 
 export default SelectorOption;

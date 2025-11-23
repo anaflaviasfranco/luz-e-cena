@@ -14,8 +14,8 @@ const useFetchMovies = () => {
       const movies = await getMovies();
       setMovies(movies);
     } catch (err) {
-        setError("Erro ao buscar filmes. Tente novamente.");
-        console.error( err);
+      setError("Erro ao buscar filmes. Tente novamente.");
+      console.error(err);
     } finally {
       setIsLoading(false);
     }
@@ -25,7 +25,7 @@ const useFetchMovies = () => {
     fetchMovies();
   }, []);
 
-  return {movies, isLoading, error};
+  return { movies, isLoading, error };
 };
 
 export default useFetchMovies;

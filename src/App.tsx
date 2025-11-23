@@ -7,16 +7,13 @@ import Newsletter from "./components/Newsletter";
 function App() {
   return (
     <>
-    <Header />
+      <Header />
       <Banner
         src="./banner.png"
         alt="Banner principal da página do site Luz e Cena"
       />
       <MovieSection />
-      <Banner
-        src="./combo.png"
-        alt="Combo"
-      />
+      <Banner src="./combo.png" alt="Combo" />
       <Newsletter />
       <Footer />
     </>
